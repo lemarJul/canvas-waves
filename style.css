@@ -1,0 +1,57 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+
+}
+canvas {
+  display: block;
+  background-color: #010101;
+}
+
+.Panel {
+  position: absolute;
+  padding: 1.5625rem;
+  background-color: white;
+  /* display: flex; */
+  flex-direction: column;
+
+
+  border-radius: .9375rem;
+  border: none;
+}
+.Panel__openButton {
+  position: absolute;
+  top: 10px;
+  right: 10px
+}
+.Panel__OpenButton.-open::after {
+  content: close;
+}
+.Panel.active {
+  display: flex;
+}
+
+.Panel .content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Panel .content h2 {
+  margin-top: 0;
+}
+
+.Panel .content button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Panel .content button:hover {
+  background-color: #0056b3;
+}
